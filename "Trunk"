@@ -1,0 +1,12 @@
+def findword(Speech,Word,Word2,Return):
+	if Speech.find(Word) > -1 or Speech.find(Word2) > -1:
+	 	if Return==" ":
+	 		return True
+	 		print(Return)
+space = " "
+user = " "
+useless = " "
+print("Hello")
+i=1
+while i==1:
+	message = raw_input()
