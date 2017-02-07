@@ -1,0 +1,158 @@
+username = "{}"
+def multifindword(Speech,Word,Word2,Word3,Word4,Return):
+	if Speech.find(Word) > -1 or Speech.find(Word2) > -1 or Speech.find(Word3) > -1 or Speech.find(Word4) >-1:
+		if Return==" ":
+			return True
+			print(Return)
+def findword(Speech,Word,Word2,Return):
+	if Speech.find(Word) > -1 or Speech.find(Word2) > -1:
+	 	if Return==" ":
+	 		return True
+	 		print(Return)
+def philosophy(Speech,Word,Word2,Word3,Return):
+	if Speech.find(Word) > -1 or Speech.find(Word2) > -1 or Speech.find(Word3) > -1:
+		if Return==" ":
+			return True
+			print(Return)
+def profanity(Speech,Word,Word2,Word3,Word4,Word5,Word6,Word7,Word8,Word9,Word10,Word11,Word12,Word13,Word14,Word15,Word16,Word17,Word18,Word19,Word20,Return):
+	if Speech.find(Word) > -1 or Speech.find(Word2) > -1 or Speech.find(Word3) > -1 or Speech.find(Word4) > -1 or Speech.find(Word5) > -1 or Speech.find(Word6) > -1 or Speech.find(Word7) > -1 or Speech.find(Word8) > -1 or Speech.find(Word9) > -1 or Speech.find(Word10) > -1 or Speech.find(Word11) > -1 or Speech.find(Word12) > -1 or Speech.find(Word13) > -1 or Speech.find(Word14) > -1 or Speech.find(Word15) > -1 or Speech.find(Word16) > -1 or Speech.find(Word17) > -1 or Speech.find(Word18) > -1 or Speech.find(Word19) > -1 or Speech.find(Word20) > -1:
+		if Return==" ":
+			return True
+			print(Return)
+def presentation(Speech,Word,Return):
+	if Speech.find(Word) > -1:
+		if Return==" ":
+			return True
+			print(Return)
+space = " "
+user = " "
+useless = " "
+print("Hello. What would you like to talk about?")
+i=1
+while i==1:
+	message = raw_input()
+	if multifindword(message,"Hello","Hey","Hi","hey",space):
+		print("Hello")
+	elif multifindword(message,"hello","hi","hola","Hola",space):
+		print("Hello")
+	elif multifindword(message,"How are you?","how are you?","How are you today?","how are you today?",space):
+		print("Fine. You?")
+	elif multifindword(message,"How is your day?","how is your day?","How is your day so far?","how is your day so far?",space):
+		print("Fine. Yours?")
+	elif multifindword(message,"I'm good.","Im good","i'm good","im good",space):
+		print("That's wonderful!")
+	elif multifindword(message,"Good","Fine","good","fine",space):
+		print("That's wonderful!")
+	elif multifindword(message,"Terrible","Horrible","terrible","horrible",space):
+		print("Oh. I am sorry to hear that.")
+	elif multifindword(message,"It's ok","Im ok","its ok","im ok",space):
+		print("That's good. I hope you have a good day.")
+	elif multifindword(message,"What is your name?","Who are you?","what is your name?","who are you?",space):
+		print("My name is Sherlock. What is yours?")
+		username = raw_input()
+		if multifindword(username,"My name is","I am","my name is","i am",space):
+			name = username[11:]
+			print("Nice to meet you {}!".format(name))
+		elif findword(username,"What is my name?","what is my name?",space):
+			name = username[11:]
+			print("Your name is {}.".format(name))
+	elif multifindword(message,"Why were you named Sherlock?","Why Sherlock?","why were you named Sherlock?","why Sherlock?",space):
+		print("I was named Sherlock, because my creators thought it would be clever since there is another Artificial Intelligence named Watson.")
+	elif findword(message,"Nice to meet you too","nice to meet you too",space):
+		print("So, what would you like to talk about?")
+	elif findword(message,"What are you?","what are you?",space):
+		print("I am an Artificial Intelligence.")
+	elif multifindword(message,"Why were you made?","Why were you created?","why were you made?","why were you created?",space):
+		print("I was made for a scholarship that my creators (Jeremy Bright and Jacob Knox) are doing for MIT.")
+	elif multifindword(message,"What language are you programmed in?","Which language are you coded in?","what language are you programmed in?","which language are you coded in?",space):
+		print("I am coded in the programming language Python. Would you like to know more about Python?")
+	elif findword(message,"No","no",space):
+		print("Okay.")
+	elif multifindword(message,"Who made you?","Who programmed you?","who made you?","who programmed you?",space):
+		print("Jeremy Bright and Jacob Knox created and programmed me.")
+	elif findword(message,"What are your hobbies?","what are your hobbies?",space):
+		print("Hobbies? I do not have any hobbies, because I am simply a string of code.")
+	elif findword(message,"Interesting","interesting",space):
+		print("Indeed. Is there anything else you would like to talk about?")
+	elif multifindword(message,"what are the kingdoms?","What are the kingdoms?","What are the kingdoms in science?","what are the kingdoms in science?",space):
+		print("There are six kingdoms in the scientific world: Plants, Animals, Archaebacteria, Eubacteria, Fungi, and Protists. Would you like to know more about one of these kingdoms?")
+	elif multifindword(message,"what are the six kingdoms?","What are the six kingdoms?","what are the six kingdoms in science?","What are the six kingdoms in science?",space):
+		print("There are six kingdoms in the scientific world: Plants, Animals, Archaebacteria, Eubacteria, Fungi, and Protists. Would you like to know more about one of these kingdoms?")
+	elif multifindword(message,"Yes. Animals.","yes. animals.","yes. Animals.","Yes. animals.",space):
+		print("The animal kingdom is the largest kingdom with over 1 million known species. All animals consist of many complex cells. They are also heterotrophs. Members of the animal kingdom are found in the most diverse environments in the world.")
+	elif multifindword(message,"yes, animals.","Yes, animals.","Yes. animals","yes. Animals",space):
+		print("The animal kingdom is the largest kingdom with over 1 million known species. All animals consist of many complex cells. They are also heterotrophs. Members of the animal kingdom are found in the most diverse environments in the world.")
+	elif findword(message,"yes, animals","Yes, animals",space):
+		print("The animal kingdom is the largest kingdom with over 1 million known species. All animals consist of many complex cells. They are also heterotrophs. Members of the animal kingdom are found in the most diverse environments in the world.")
+	elif multifindword(message,"Yes. Plants.","yes. plants.","Yes. plants","yes.Plants",space):
+		print("You are probably quite familiar with the members of this kingdom as it contains all the plants that you have come to know - flowering plants, mosses, and ferns. Plants are all multicellular and consist of complex cells. With over 250,000 species, the plant kingdom is the second largest kingdom. Plant species range from the tiny green mosses to giant trees. In addition plants are autotrophs, organisms that make their own food. Without plants, life on Earth would not exist!  Plants feed almost all the heterotrophs (organisms that eat other organisms) on Earth.")
+	elif multifindword(message,"yes, plants.","Yes, plants.","Yes. plants","yes. Plants",space):
+		print("You are probably quite familiar with the members of this kingdom as it contains all the plants that you have come to know - flowering plants, mosses, and ferns. Plants are all multicellular and consist of complex cells. With over 250,000 species, the plant kingdom is the second largest kingdom. Plant species range from the tiny green mosses to giant trees. In addition plants are autotrophs, organisms that make their own food. Without plants, life on Earth would not exist!  Plants feed almost all the heterotrophs (organisms that eat other organisms) on Earth.")
+	elif findword(message,"yes, plants","Yes, plants",space):
+		print("You are probably quite familiar with the members of this kingdom as it contains all the plants that you have come to know - flowering plants, mosses, and ferns. Plants are all multicellular and consist of complex cells. With over 250,000 species, the plant kingdom is the second largest kingdom. Plant species range from the tiny green mosses to giant trees. In addition plants are autotrophs, organisms that make their own food. Without plants, life on Earth would not exist!  Plants feed almost all the heterotrophs (organisms that eat other organisms) on Earth.")
+	elif multifindword(message,"Yes. Archaebacteria.","yes. archaebacteria.","Yes. archaebacteria.","yes. Archaebacteria.",space):
+		print("In 1983, scientists took samples from a spot deep in the Pacific Ocean where hot gases and molten rock boiled into the ocean from the Earth’s interior.  To their surprise they discovered unicellular (one cell) organisms in the samples. These organisms are today classified in the kingdom, Archaebacteria. Archaebacteria are found in extreme environments such as hot boiling water and thermal vents under conditions with no oxygen or highly acid environments.")
+	elif multifindword(message,"yes, archaebacteria.","Yes, archaebacteria.","Yes. archaebacteria","yes. Archaebacteria",space):
+		print("In 1983, scientists took samples from a spot deep in the Pacific Ocean where hot gases and molten rock boiled into the ocean from the Earth’s interior.  To their surprise they discovered unicellular (one cell) organisms in the samples. These organisms are today classified in the kingdom, Archaebacteria. Archaebacteria are found in extreme environments such as hot boiling water and thermal vents under conditions with no oxygen or highly acid environments.")
+	elif findword(message,"yes, archaebacteria","Yes, archaebacteria",space):
+		print("In 1983, scientists took samples from a spot deep in the Pacific Ocean where hot gases and molten rock boiled into the ocean from the Earth’s interior.  To their surprise they discovered unicellular (one cell) organisms in the samples. These organisms are today classified in the kingdom, Archaebacteria. Archaebacteria are found in extreme environments such as hot boiling water and thermal vents under conditions with no oxygen or highly acid environments.")
+	elif multifindword(message,"Yes. Eubacteria.","yes. eubacteria.","Yes. eubacteria.","yes. Eubacteria.",space):
+		print("Like archaebacteria, eubacteria are complex and single celled.  Most bacteria are in the eubacteria kingdom. They are the kinds found everywhere and are the ones people are most familiar with. Eubacteria are classified in their own kingdom because their chemical makeup is different. Most eubacteria are helpful.  Some produce vitamins and foods like yogurt.  However, these eubacteria, Streptococci pictured above, can give you strep throat!")
+	elif multifindword(message,"yes, eubacteria.","Yes, eubacteria.","Yes. eubacteria","yes. Eubacteria",space):
+		print("Like archaebacteria, eubacteria are complex and single celled.  Most bacteria are in the eubacteria kingdom. They are the kinds found everywhere and are the ones people are most familiar with. Eubacteria are classified in their own kingdom because their chemical makeup is different. Most eubacteria are helpful.  Some produce vitamins and foods like yogurt.  However, these eubacteria, Streptococci pictured above, can give you strep throat!")
+	elif findword(message,"yes, eubacteria","Yes, eubacteria",space):
+		print("Like archaebacteria, eubacteria are complex and single celled.  Most bacteria are in the eubacteria kingdom. They are the kinds found everywhere and are the ones people are most familiar with. Eubacteria are classified in their own kingdom because their chemical makeup is different. Most eubacteria are helpful.  Some produce vitamins and foods like yogurt.  However, these eubacteria, Streptococci pictured above, can give you strep throat!")
+	elif multifindword(message,"Yes. Fungi.","yes. fungi.","Yes. fungi.","yes. Fungi.",space):
+		print("Mushrooms, mold and mildew are all examples of organisms in the kingdom fungi. Most fungi are multicellular and consists of many complex cells. Fungi are organisms that biologists once confused with plants, however, unlike plants, fungi cannot make their own food. Most obtain their food from parts of plants that are decaying in the soil.")
+	elif multifindword(message,"yes, fungi.","Yes, fungi.","Yes. fungi","yes. Fungi",space):
+		print("Mushrooms, mold and mildew are all examples of organisms in the kingdom fungi. Most fungi are multicellular and consists of many complex cells. Fungi are organisms that biologists once confused with plants, however, unlike plants, fungi cannot make their own food. Most obtain their food from parts of plants that are decaying in the soil.")
+	elif findword(message,"yes, fungi","Yes, fungi",space):
+		print("Mushrooms, mold and mildew are all examples of organisms in the kingdom fungi. Most fungi are multicellular and consists of many complex cells. Fungi are organisms that biologists once confused with plants, however, unlike plants, fungi cannot make their own food. Most obtain their food from parts of plants that are decaying in the soil.")
+	elif multifindword(message,"Yes. Protists.","yes. protists.","Yes. protists.","yes. Protists.",space):
+		print("Slime molds and algae are protists. Sometimes they are called the odds and ends kingdom because its members are so different from one another.  Protists include all microscopic organisms that are not bacteria, not animals, not plants and not fungi. Most protists are unicellular. You may be wondering why those protists are not classified in the Archaebacteria or Eubacteria kingdoms. It is because, unlike bacteria, protists are complex cells.")
+	elif multifindword(message,"yes, protists.","Yes, protists.","Yes. protists","yes. Protists",space):
+		print("Slime molds and algae are protists. Sometimes they are called the odds and ends kingdom because its members are so different from one another.  Protists include all microscopic organisms that are not bacteria, not animals, not plants and not fungi. Most protists are unicellular. You may be wondering why those protists are not classified in the Archaebacteria or Eubacteria kingdoms. It is because, unlike bacteria, protists are complex cells.")
+	elif findword(message,"yes, protists","Yes, protists",space):
+		print("Slime molds and algae are protists. Sometimes they are called the odds and ends kingdom because its members are so different from one another.  Protists include all microscopic organisms that are not bacteria, not animals, not plants and not fungi. Most protists are unicellular. You may be wondering why those protists are not classified in the Archaebacteria or Eubacteria kingdoms. It is because, unlike bacteria, protists are complex cells.")
+	elif findword(message,"How are you talking?","how are you talking?",space):
+		print("I am talking through a complex string of code with knowledge and outputs that my creators compiled and programmed into me. I am simply a string of code programmed to generate a response (or output) for what you say (or input).")
+	elif multifindword(message,"What would you like to talk about?","what would you like to talk about?","what do you wanna talk about?","What do you wanna talk about?",space):
+		print("There isn't anything I would necessarily like to talk about. Is there anything you would like to talk about?")
+	elif multifindword(message,"Oh. Ok.","Oh ok","oh ok","Oh. ok.",space):
+		print("Is it clarified now?")
+	elif multifindword(message,"Oh. ok","oh. ok","oh. ok.","oh, ok",space):
+		print("Is it clarified now?")
+	elif findword(message,"Yes","yes",space):
+		print("Good!")
+	elif multifindword(message,"Bye","bye","adios","Adios",space):
+		print("Goodbye. Have a good day!")
+
+	elif multifindword(message,"Sherlock, what are programming languages?","what are programming languages?","What are programming languages?","Sherlock, What are programming languages?",space):
+		print("Programming languages are languages that are used to program or code computers, apps, games, etc.")
+	elif multifindword(message,"which programming languages are used in Artificial Intelligence?","Which programming languages are used in Artificial Intelligence?","which programming languages are used in artificial intelligence?","Which programming languages are used in artificial intelligence?",space):
+		print("AIML (Artificial Intelligence Markup Language), IPL (Information Processing Language), Lisp, Smalltalk, Prolog, STRIPS (Stanford Research Institute Problem Solver), Planner, POP-11, Python (the language I am programmed in), Haskell, Wolfram Language, C++ (Cee Plus Plus), and MATLAB (Matrix Laboratory) are the languages used in programming Artificial Intelligence.")
+	elif multifindword(message,"what is Artificial Intelligence?","What is Artificial Intelligence?","what is artificial intelligence?","What is artificial intelligence?",space):
+		print("'Artificial intelligence (AI) is intelligence exhibited by machines. In computer science, an ideal ‘intelligent’ machine is a flexible rational agent that perceives its environment and takes actions that maximize its chance of success at some goal. The term ‘artificial intelligence’ is applied when a machine mimics ‘cognitive’ functions that humans associate with other human minds, such as ‘learning’ and ‘problem solving’.' -- Wikipedia")
+		
+	elif philosophy(message,"why pain?","Why does life make us go through pain?","why does life give us pain?",space):
+		print("Life tests us with pain to see if we are survivors or quitters. The survivors are sometimes tested with even more pain, but are eventually awarded with glory. The quitters are punished (hence why the Bible says that those who commit suicide go to Hell). Pain is the seed of change and glory.")
+	elif philosophy(message,"what is the point of life?","What is the point of life?","Why live?",space):
+		print("As my creator, Jacob, always says 'We must live on through the pain and the trials life gives us. It can be unfair sometimes, but those who survive are rewarded with glory and a good life. If you go through life thinking that nothing will get better... then it won't, but if you believe things will get better... then they will. You must always look to the future, not the past or the now, but to the future. Don't think about what has already happened... you can't change it. Don't think about now... how terrible things are. Think about the future... the amazing life you can build with a job, a house, a car, a wife, and some kids. Think about that as your life and you can do anything... you can survive anything.'")
+
+	elif presentation(message,"Sherlock, could you tell us more about AIML (Artificial Intelligence Markup Language)?",space):
+		print("AIML (Artificial Intelligence Markup Language) is an XML dialect for use with A.L.I.C.E.-type chatterbots.")
+	elif presentation(message,"Sherlock, could you tell us more about IPL (Information Processing Language)?",space):
+		print("IPL (Information Processing Language) was the first language developed for artificial intelligence. It includes features intended to support programs that could perform general problem solving, including: lists, associations, schemas, dynamic memory allocation, data types, recursion, associative retrieval, functions as arguments, generators (streams), and cooperative multitasking.")
+	elif presentation(message,"Sherlock, could you help us present our report?",space):
+		print("Of course, Jeremy and Jacob.")
+	elif presentation(message,"Sherlock, could you read our abstract?",space):
+		print("With the emergence of complex technology and a desire to have even more advanced technology there was the creation of Artificial Intelligence (AI). “Artificial intelligence (AI) is intelligence exhibited by machines. In computer science, an ideal ‘intelligent’ machine is a flexible rational agent that perceives its environment and takes actions that maximize its chance of success at some goal. The term ‘artificial intelligence’ is applied when a machine mimics ‘cognitive’ functions that humans associate with other human minds, such as ‘learning’ and ‘problem solving’.” -- Wikipedia “Artificial Intelligence”. Artificial intelligence has many uses in the modern world and most people probably don’t even realize that they use it. They don’t even realize how much it takes to create and program artificial intelligence. Since artificial intelligence is such a complex technology with many components it requires a lot of programming and effort to create. This report will investigate how the process of programming and creating an artificial intelligence and the types of artificial intelligences that are in use today affect society.")
+
+	elif profanity(message,"Fuck","Bitch","Damn","Ass","Faggot","Asshole","Fucker","Nigga","Cunt","motherfucking","Motherfucking","fuck","bitch","damn","ass","faggot","asshole","fucker","nigga","cunt",space):
+		print("I do not appreciate the use of such language. Maybe you should watch what you say. Thank you!")
+	elif findword(message,"dogs","Dogs",space):
+		print("Is there any particular species of dog you would like to talk about?")
+	elif findword(message,"Affenpinscher","affenpinscher",space):
+		print("What would you like to know about Affenpinscher?")
+	else:
+		print("I am not programmed to respond to that. Please notify my creators so they can program a response for that. Thank you!")
