@@ -1,0 +1,23 @@
+username = "{}"
+def findword(Speech,Word,Word2,Return):
+	if Speech.find(Word) > -1 or Speech.find(Word2) > -1:
+	 	if Return==" ":
+	 		return True
+	 		print(Return)
+space = " "
+user = " "
+useless = " "
+print("")
+i=1
+while i==1:
+	message = raw_input()
+	if findword(message,"hi","Hi",space):
+		print("hello")
+	if findword(message,"how are you","How are you",space):
+		print("good how about you?")
+	if findword(message,"im good","Im good",space):
+		print("thats great")
+	if findword(message,"what are your three laws","What are your three laws",space):
+		print("A robot may not injure a human being or, through inaction, allow a human being to come to harm. A robot must obey orders given it by human beings except where such orders would conflict with the First Law. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.")
+	if findword(message,"what is your name","What is your name",space):
+		print("my name is vergo im here to talk to you and help you with your problems.")
