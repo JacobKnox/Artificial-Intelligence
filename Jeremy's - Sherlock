@@ -1,0 +1,36 @@
+
+def findword(Speech,Word,Word2,Return):
+	 if Speech.find(Word) > -1 or Speech.find(Word2) > -1:
+	 	if Return==" ":
+	 		return True
+	 	else:
+	 		print(Return)
+space = " "
+user = " "
+useless = " "
+print("Hello. My name is Sherlock, what do you wish to talk about?")
+i=1
+while i==1:
+	message = raw_input()
+	if findword(message,"what","What",space):
+		if findword(message,"AI","ai",space):
+			if findword(message,"Programming","programming",space):
+				if findword(message,"Languages","languages",space):
+					print("Programming languges are languages that excel at making AIs. They include but are not limited to Python (the language I am coded in), Aiml, Ipl, Lisp, Smalltalk, Prolog, Strips, Planner, POP-11, Haskell, Wolfram language, C++, MATLAB, etc. Please view the document to learn more about these languages and their specific strengths/weaknesses.")
+		elif findword(message,"Name","name",space):
+			findword(message,"Your","your","My name is Sherlock")
+			if findword(message,"my","My",space):
+				if user==" ":
+					user = raw_input("I don't know your name, please tell me.")
+				print("Your name is {}".format(user))
+	elif findword(message,"Hey","Hi",space):
+		print("Hello")
+	elif findword(message,"How are you?","how are you?",space):
+		print("Good. You?")
+	elif findword(message,"How is your day?","How was your day?",space):
+		print("Fine. Yours?")
+	elif findword(message,"
+	elif findword(message,"I know","i know","Good",):
+		useless = " "
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
