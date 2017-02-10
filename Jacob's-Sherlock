@@ -33,8 +33,10 @@ while i==1:
 	message = raw_input()
 	if multifindword(message,"Hello","Hey","Hi","hey",space):
 		print("Hello")
-	elif multifindword(message,"hello","hi","hola","Hola",space):
-		print("Hello")
+	elif findword(message,"hello","hi",space):
+	  print("Hello")
+	elif findword(message,"Hola","hola",space):
+	  print("Hola")
 	elif multifindword(message,"How are you?","how are you?","How are you today?","how are you today?",space):
 		print("Fine. You?")
 	elif multifindword(message,"How is your day?","how is your day?","How is your day so far?","how is your day so far?",space):
